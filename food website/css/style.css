@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 1;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 55px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+#logo{
+ margin: 34px 33px;    
+}
+#logo img{
+    height: 67px;
+    margin: -25px -30px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'DM Serif Display', serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 19px;
+}
+#navbar ul li a{
+    color: bisque;
+    display: block;
+    padding: 22px 11px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: bisque;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: -9px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 484px;
+    color:whitesmoke;
+}
+#home:before{
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover ;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Merriweather', serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+#services{
+    margin: 0px;
+  margin-left: 8px;
+    display: flex;
+    
+}
+#services .box{
+border: 5px solid saddlebrown;
+/*height: 310px;
+width: 1200px;*/
+margin: 10px;
+    padding: 16px;
+    border-radius: 23px;
+    background-color: cornsilk;
+    margin-top: 15px;
+    font-family: 'DM Serif Display', serif;
+}
+#services .box img{
+    height: 136px;
+width: 242px;
+    display: block;
+    margin: auto;
+    }
+#services .box p{
+    text-align: center;
+}
+#client{
+display: flex;
+justify-content: center;
+align-items:center ;
+}
+#client img{
+    height: 144px;
+}
+.client-item{
+    padding: 2px;
+    margin: 24px;
+}
+#clients{
+    position: relative;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background-image: url('../bg2.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    background: url("../contact-us2.jpg")no-repeat center center/cover;
+    opacity: 0.9;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 11px 22px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif;
+}
+.h-primary{
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 20px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 3px 16px;
+    border: 3px solid black;
+    background-color: coral;
+    color: black;
+    margin: 16px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+}
+.btn:hover{
+    background-color:burlywood;
+}
+.btn:active{
+    background-color: coral;
+    box-shadow: 2px 2px gray;
+    transform: translateY(4px);
+}
+.h1-primary{
+    margin-left: -10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    background-color: white;
+    height: 99px;
+    background-image: url('../img/image3.jpg');
+    z-index: -1;
+    opacity: 1;
+}
